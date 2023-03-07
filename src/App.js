@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import Contador from './components/contador';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
 
 const App = (props) => {
   return (
@@ -10,7 +8,7 @@ const App = (props) => {
     <div className="container text-center mt-5 bg-dark py-5">
       <div className="row text-white fs-1 ">
         <div className="col">
-          
+          <p ><FontAwesomeIcon icon={faClock} size="2x" /></p>
         </div>
         <div className="col">
           {Math.floor(props.numero / 3600)}
