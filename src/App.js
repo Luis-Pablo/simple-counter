@@ -11,16 +11,19 @@ const App = (props) => {
           <p ><FontAwesomeIcon icon={faClock} size="2x" /></p>
         </div>
         <div className="col">
-          {Math.floor(props.numero / 3600)}
+          {Math.floor(props.numero /600 % 6)}
         </div>
         <div className="col">
-          {Math.floor(props.numero / 600)}
+          {Math.floor(props.numero /60 %10)}       
         </div>
         <div className="col">
-          {Math.floor(props.numero / 60)}
+                :
         </div>
         <div className="col">
-          {Math.floor(props.numero % 10)}
+        {Math.floor(props.numero /10 %6)}
+        </div>
+        <div className="col">
+          {Math.floor((props.numero  % 10)) }
         </div>
 
       </div>
